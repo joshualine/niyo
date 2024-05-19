@@ -39,6 +39,6 @@ userSchema.pre('save', async function (next) {
 
 
 
-const User = mongoose.model("User", userSchema);
+const TaskUser = mongoose.model("TaskUser", userSchema);
 
-module.exports = User;
+module.exports = TaskUser;
