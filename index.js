@@ -47,7 +47,7 @@ const options = {
     },
     servers: [
       {
-        url: "/api/",
+        url: "https://niyo-dxc0.onrender.com/api/",
       },
     ],
   },
