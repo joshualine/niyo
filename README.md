@@ -2,6 +2,7 @@
 
 - Get all user tasks
 - Remove task
+- Mark task as completed
 
 ## Usage
 
@@ -12,8 +13,6 @@
 Rename the `.env.example` file to `.env` and add the following
 
 ```
-NODE_ENV = development
-PORT = 5000
 MONGO_URI = your mongodb uri
 JWT_SECRET = 'abc123'
 ```
@@ -29,7 +28,7 @@ npm install
 
 ```
 
-# Run backend (:5000)
+# Run backend (:8080)
 npm run dev
 
 ```
@@ -40,17 +39,6 @@ npm run dev
 npm run build
 ```
 
-### Seed Database
-
-You can use the following commands to seed the database with some sample users and tasks as well as destroy all data
-
-```
-# Import data
-npm run data:import
-
-# Destroy data
-npm run data:destroy
-```
 
 ```
 Sample User Logins
