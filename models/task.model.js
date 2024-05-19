@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const TaskSchema = mongoose.Schema(
   {
-    name: {
+    title: {
       type: String,
       required: true
     },
@@ -14,11 +14,6 @@ const TaskSchema = mongoose.Schema(
       type: Boolean,
       required: true,
       default: false
-    },
-    priority: {
-      type: String,
-      enum: ['Low', 'Medium', 'High'],
-      default: 'High'
     },
   },
   {
